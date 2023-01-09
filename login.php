@@ -34,8 +34,8 @@ if (isset($_POST['login'])) {
                 header('location:welcome.php');
             }
         } else {
+            header( "refresh:0;url=index.php" );
             echo "<script>alert('Invalid Username or Password');</script>";
-            exit;
         }
     }
 
